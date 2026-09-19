@@ -113,7 +113,7 @@ public class AStarPathPlanning extends PathPlanning {
       }
 
       // 5
-      Node n = null;
+      Node n = null;                   //先声明了一个变量，用来保存open中estimate()最小的Node
       for (EntityID id : open) {
         Node node = nodeMap.get(id);
 
